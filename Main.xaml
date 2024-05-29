@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="968.8,5162.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="968.8,5358.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -109,7 +109,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="979.2,5097.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="979.2,5293.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="EmpData" />
     </Sequence.Variables>
@@ -119,20 +119,20 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[EmpData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="916.8,120" sap2010:WorkflowViewState.IdRef="ReadRange_3" SheetName="data" WorkbookPath="challenge.xlsx" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: The Automation Challenge" sap:VirtualizedContainerService.HintSize="916.8,4888.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="c9ad8f0e-7201-404c-bd67-38c503b47708" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Browser Edge: The Automation Challenge" sap:VirtualizedContainerService.HintSize="916.8,5084.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="c9ad8f0e-7201-404c-bd67-38c503b47708" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="883.2,4648.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="883.2,4844.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="820.8,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]0[u(ctrl)][u(hk)]" Version="V3">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="820.8,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]0[u(ctrl)][u(hk)]" Version="V3">
               <uix:NKeyboardShortcuts.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionOptions.Retry>
@@ -150,7 +150,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start'" sap:VirtualizedContainerService.HintSize="820.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c9ad8f0e-7201-404c-bd67-38c503b47708" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start'" sap:VirtualizedContainerService.HintSize="820.8,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c9ad8f0e-7201-404c-bd67-38c503b47708" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="8309fe4f-3db5-4b5b-ac35-5d582ff0ddde" CvElementArea="60, 729, 425, 60" CvTextArea="245, 751, 53, 16" CvTextArgument="Start" CvType="Button" DesignTimeRectangle="64, 731, 420, 56" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' type='' class='bubble-element Button clickable-element' check:innerText='Start' /&gt;" Guid="16599af6-57de-4460-9528-fe89feb1a446" InformativeScreenshot="da305128d30783ca4ed4725415771f82.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -165,13 +165,13 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[EmpData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="820.8,4088.8" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[EmpData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="820.8,4284.8" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="787.2,3898.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="787.2,4094.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -186,7 +186,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LogMessage>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_6">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
                           <sap:WorkflowViewStateService.ViewState>
@@ -230,7 +230,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
+                    <ui:AnchorBase AnchorPosition="Auto" ContinueOnError="True" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
                       <ui:AnchorBase.Action>
                         <ActivityAction x:TypeArguments="ui:Anchor">
                           <ActivityAction.Argument>
@@ -276,7 +276,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LogMessage>
-                    <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_2">
+                    <ui:AnchorBase AnchorPosition="Auto" ContinueOnError="True" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_2">
                       <ui:AnchorBase.Action>
                         <ActivityAction x:TypeArguments="ui:Anchor">
                           <ActivityAction.Argument>
@@ -314,7 +314,7 @@
                         </ui:WaitImageAppear>
                       </ui:AnchorBase.AnchorProvider>
                     </ui:AnchorBase>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_12">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
                           <sap:WorkflowViewStateService.ViewState>
@@ -418,7 +418,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LogMessage>
-                    <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_3">
+                    <ui:AnchorBase AnchorPosition="Auto" ContinueOnError="True" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_3">
                       <ui:AnchorBase.Action>
                         <ActivityAction x:TypeArguments="ui:Anchor">
                           <ActivityAction.Argument>
@@ -456,7 +456,7 @@
                         </ui:WaitImageAppear>
                       </ui:AnchorBase.AnchorProvider>
                     </ui:AnchorBase>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_13">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_17">
                           <sap:WorkflowViewStateService.ViewState>
@@ -560,7 +560,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LogMessage>
-                    <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_4">
+                    <ui:AnchorBase AnchorPosition="Auto" ContinueOnError="True" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_4">
                       <ui:AnchorBase.Action>
                         <ActivityAction x:TypeArguments="ui:Anchor">
                           <ActivityAction.Argument>
@@ -604,7 +604,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:AnchorBase>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_14">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_18">
                           <sap:WorkflowViewStateService.ViewState>
@@ -708,7 +708,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LogMessage>
-                    <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_5">
+                    <ui:AnchorBase AnchorPosition="Auto" ContinueOnError="True" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_5">
                       <ui:AnchorBase.Action>
                         <ActivityAction x:TypeArguments="ui:Anchor">
                           <ActivityAction.Argument>
@@ -746,7 +746,7 @@
                         </ui:WaitImageAppear>
                       </ui:AnchorBase.AnchorProvider>
                     </ui:AnchorBase>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_9">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
                           <sap:WorkflowViewStateService.ViewState>
@@ -798,7 +798,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LogMessage>
-                    <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_6">
+                    <ui:AnchorBase AnchorPosition="Auto" ContinueOnError="True" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_6">
                       <ui:AnchorBase.Action>
                         <ActivityAction x:TypeArguments="ui:Anchor">
                           <ActivityAction.Argument>
@@ -836,7 +836,7 @@
                         </ui:WaitImageAppear>
                       </ui:AnchorBase.AnchorProvider>
                     </ui:AnchorBase>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_10">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
                           <sap:WorkflowViewStateService.ViewState>
@@ -888,7 +888,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LogMessage>
-                    <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_7">
+                    <ui:AnchorBase AnchorPosition="Auto" ContinueOnError="True" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,280.8" sap2010:WorkflowViewState.IdRef="AnchorBase_7">
                       <ui:AnchorBase.Action>
                         <ActivityAction x:TypeArguments="ui:Anchor">
                           <ActivityAction.Argument>
@@ -926,7 +926,7 @@
                         </ui:WaitImageAppear>
                       </ui:AnchorBase.AnchorProvider>
                     </ui:AnchorBase>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_11">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="724.8,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_11">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,134.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
                           <sap:WorkflowViewStateService.ViewState>
@@ -970,7 +970,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="724.8,216.8" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c9ad8f0e-7201-404c-bd67-38c503b47708" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="724.8,216.8" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c9ad8f0e-7201-404c-bd67-38c503b47708" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="fc8cd9ce-ff8f-4ab1-a5fc-20ab9f2fb8f1" CvElementArea="786, 483, 207, 68" CvTextArea="852, 509, 71, 16" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="788, 486, 204, 62" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Submit' tabindex='43' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' tabindex='43' tag='BUTTON' type='' class='bubble-element Button clickable-element' check:innerText='Submit' /&gt;" Guid="0a023ae9-69db-482c-91ee-20c283d62ce1" InformativeScreenshot="8444396c653cd2633b4137f472e7d85a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
                       </uix:NClick.Target>
